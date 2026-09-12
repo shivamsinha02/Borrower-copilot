@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Borrower Copilot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="container">
+    <header>
+      <h1>Borrower <span>Copilot</span></h1>
+      <p class="sub">Know your numbers before you walk into a lender.</p>
+    </header>
+
+    <!-- Step 1: Must questions -->
+    <section id="step-must" class="step">
+      <h2>Your basics</h2>
+      <form id="must-form">
+        <!-- We'll generate inputs via JS -->
+      </form>
+    </section>
+
+    <!-- Step 2: Conditional questions (shown/hidden based on type) -->
+    <section id="step-conditional" class="step" style="display:none;">
+      <h2>Just a few more details</h2>
+      <form id="conditional-form"></form>
+    </section>
+
+    <!-- Step 3: Results + Negotiation Card -->
+    <section id="step-results" class="step" style="display:none;">
+      <h2>Your Copilot verdict</h2>
+      <div id="results-container"></div>
+      <div id="card-container" class="card"></div>
+      <button id="reset-btn" class="btn secondary">Start over</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* ===== Reset & base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f8f6f7;
+  color: #1e141a;
+  padding: 1.5rem 1rem;
+  line-height: 1.5;
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+/* ===== Typography ===== */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+h1 span {
+  color: #7c3a5c;
+}
+.sub {
+  color: #6b5a63;
+  margin-top: 0.25rem;
+  font-size: 1.05rem;
+}
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+  color: #2a1c24;
+}
+
+/* ===== Form ===== */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+label .hint {
+  font-weight: 400;
+  color: #7a6a73;
+  font-size: 0.8rem;
+}
+input, select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #ddd2d8;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: white;
+  transition: 0.2s;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: #7c3a5c;
+  box-shadow: 0 0 0 3px rgba(124,58,92,0.15);
+}
+.check-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+.check-group input {
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  background: #7c3a5c;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.15s;
+  margin-top: 0.5rem;
+}
+.btn:hover {
+  background: #5e2c45;
+  transform: scale(1.01);
+}
+.btn.secondary {
+  background: #e5dbe0;
+  color: #2a1c24;
+}
+.btn.secondary:hover {
+  background: #d0c2c9;
+}
+
+/* ===== Results ===== */
+.result-block {
+  background: #f3eef0;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.result-block h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b5a63;
+  margin-bottom: 0.2rem;
+}
+.result-block .number {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e141a;
+}
+.result-block .note {
+  font-size: 0.95rem;
+  color: #3d2d36;
+  margin-top: 0.3rem;
+}
+.verdict-big {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.verdict-big.green { color: #1f7b4d; }
+.verdict-big.red { color: #b13a4b; }
+.verdict-big.amber { color: #b8791e; }
+
+/* ===== Negotiation Card ===== */
+.card {
+  background: #faf7f8;
+  border: 2px solid #7c3a5c;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 12px rgba(124,58,92,0.10);
+}
+.card h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #7c3a5c;
+  margin-bottom: 0.5rem;
+}
+.card .quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #1e141a;
+}
+.card .reason {
+  margin-top: 0.5rem;
+  color: #3d2d36;
+  border-top: 1px solid #e5dbe0;
+  padding-top: 0.5rem;
+}
+
+/* ===== Helpers ===== */
+.hidden { display: none; }
+.mt-1 { margin-top: 1rem; }
