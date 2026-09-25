@@ -1,4 +1,4 @@
-# Borrower Copilot – Lokta Build Challenge
+# Borrower Copilot
 
 A self-assessment tool that helps Indian borrowers understand:
 
@@ -24,6 +24,8 @@ The app also generates a Negotiation Card that the borrower can use while discus
 4. The site will be available at:
 
 `https://<your-username>.github.io/borrower-copilot/`
+
+## Live Demo: https://borrower-copilot-rho.vercel.app/
 
 ## Project Structure
 
